@@ -1,0 +1,3 @@
+[submodule "exam"]
+	path = exam
+	url = https://github.com/ITStep-Homework/JavaScript-Exam

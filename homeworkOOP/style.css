@@ -1,0 +1,129 @@
+@import 'reset.css';
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px 200px;
+    background-color: #0c0f1d;
+    color: #dddddf;
+}
+
+.container {
+    background-color: #1b1d2a;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.btnsMenu {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#noteTitle {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+.searchMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 20px;
+}
+
+label {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#searchTitle {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+#notesContainer .note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    padding: 20px 20px 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#notesContainer .btnsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#notesContainer h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333;
+}
+
+#notesContainer p {
+    text-align: center;
+    color: #666;
+}
+
+#notesContainer button {
+    background-color: #dc3545;
+}
+
+#notesContainer button:hover {
+    background-color: #c82333;
+}

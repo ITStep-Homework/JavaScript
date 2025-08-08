@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Blocks</title>
+    <style>
+        @import 'reset.css';
+        body{
+            padding-top: 30px;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+        .colorContainer {
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .colorBlock {
+            display: inline-block;
+            width: 30%;
+            height: 45%;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+            font-size: 52px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Blocks</h1>
+    <div class="colorContainer"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('https://reqres.in/api/unknown')
+                .then(response => response.json())
+                .then(data => {
+                    const colors = data.data;
+                    const container = document.querySelector('.colorContainer');
+                    colors.forEach(color => {
+                        const colorBlock = document.createElement('div');
+                        colorBlock.className = 'colorBlock';
+                        colorBlock.style.backgroundColor = color.color;
+                        colorBlock.textContent = color.name;
+                        container.appendChild(colorBlock);
+                    });
+                })
+            .catch(error => console.error('Error fetching colors:', error));
+        });
+    </script>
+</body>
+</html>

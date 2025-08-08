@@ -1,0 +1,120 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #29294c;
+}
+
+.container {
+    width: 375px;
+    height: 812px;
+    background: #17171c;
+    padding: 192px 20px 66px;
+    border-radius: 20px;
+}
+
+.display {
+    height: 100px;
+    background: #17171c;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 125%;
+    color: #fff;
+}
+
+.enter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+}
+
+.clear, .number {
+    color: #fff;
+}
+
+.clear {
+    border-radius: 24px;
+    width: 159px;
+    height: 72px;
+    background: #4e505f;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.operator-style, .number {
+    border-radius: 24px;
+    width: 71px;
+    height: 72px;
+}
+
+.number {
+    background: #2e2f38;
+}
+
+.operator-style {
+    background: #4b5efc;
+    color: #fff;
+}
+
+.deletion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    width: 71px;
+    height: 72px;
+    background: #2e2f38;
+    color: #fff;
+}
+
+.decimal {
+    border-radius: 24px;
+    width: 71px;
+    height: 72px;
+    background: #2e2f38;
+    color: #fff;
+}
+
+.number-zero {
+    border-radius: 24px;
+    width: 71px;
+    height: 72px;
+    background: #2e2f38;
+    color: #fff;
+}
+
+.equal {
+    background: #4b5efc;
+    border-radius: 24px;
+    width: 71px;
+    height: 72px;
+    color: #fff;
+}
+
+.clicked {
+    background: #fff;
+    color: #4b5efc;
+}

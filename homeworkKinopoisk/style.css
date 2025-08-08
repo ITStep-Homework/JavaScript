@@ -1,0 +1,109 @@
+@import 'reset.css';
+
+body {
+    font-family: 'Open Sans Hebrew', sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 192px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 85px;
+    justify-content: space-between;
+}
+
+select {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121%;
+    letter-spacing: 0em;
+    color: #fff;
+    background-color: #49878d;
+    border-radius: 10px;
+    text-align: center;
+    appearance: none;
+    width: 200px;
+}
+
+.parseBtn {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121%;
+    letter-spacing: 0em;
+    color: #fff;
+    background-color: #49878d;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.parseBtn:hover, select:hover, #searchMenu:hover, select:focus, #searchMenu:focus {
+    background-color: #3d6b70;
+}
+
+#searchMenu {
+    background: #49878d;
+    border-radius: 10px;
+    width: 480px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 121%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    width: 520px;
+}
+
+#searchMenu::placeholder {
+    color: #fff;
+} 
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 92px;
+}
+
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    width: 100%;
+}
+
+.movieCard img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.movieTitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0em;
+    margin: 10px 0px;
+    color: #424242;
+    text-align: center;
+}
+
+.movieDescription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0em;
+    color: #424242;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    text-align: center;
+}

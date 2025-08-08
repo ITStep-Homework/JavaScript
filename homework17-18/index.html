@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">СПИСОК ЗАДАЧ</div>
+        <form>
+            <input type="text" placeholder="some words" id="inputText">
+            <button class="addBtn" type="button">
+                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.8412 12.3458H19.1141" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.9777 18.3458L12.9777 6.34579" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </form>
+        <div class="tasks">
+            <div class="task">
+                <div class="info">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="text">Выучить JS</div>
+                </div>
+                <div class="buttons">
+                    <a class="rewrite"><img src="assets/img/rewrite.svg"></a>
+                    <a class="delete"><img src="assets/img/delete.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/app.js"></script>
+</body>
+</html>

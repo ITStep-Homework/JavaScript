@@ -1,0 +1,18 @@
+@import 'reset.css';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+}
+
+#commentsList div {
+    margin-bottom: 10px;
+}
+
+canvas {
+    border: 1px solid #000;
+}
